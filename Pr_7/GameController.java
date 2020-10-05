@@ -23,15 +23,25 @@ public class GameController {
     }
 
     void prepareGame() {
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0; i < 10; i++) list.add(i);
-        java.util.Collections.shuffle(list);
-        for (int i = 0; i < 10;){
-            plQueue1.add(list.get(i));
-            i++;
-            plQueue2.add(list.get(i));
-            i++;
-        }
+//        List<Integer> list = new ArrayList<>();
+//        for (int i = 0; i < 10; i++) list.add(i);
+//        java.util.Collections.shuffle(list);
+//        for (int i = 0; i < 10;){
+//            plQueue1.add(list.get(i));
+//            i++;
+//            plQueue2.add(list.get(i));
+//            i++;
+//        }
+        plQueue1.add(0);
+        plQueue1.add(1);
+        plQueue1.add(2);
+        plQueue1.add(3);
+        plQueue1.add(4);
+        plQueue2.add(5);
+        plQueue2.add(6);
+        plQueue2.add(7);
+        plQueue2.add(8);
+        plQueue2.add(9);
 
         System.out.println("Player cards :");
         OutputController.printCards(plQueue1, plQueue2);

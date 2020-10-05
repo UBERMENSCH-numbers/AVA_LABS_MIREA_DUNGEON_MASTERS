@@ -21,7 +21,7 @@ public class Main <T>{
         Array<Integer> iA2 = new Array(i);
         System.out.println("\n"+iA2.get(2));
 
-        Array.Filelist("C:\\");
+        Array.Filelist("/home/user/IdeaProjects/Labs/src/");
 
     }
 }

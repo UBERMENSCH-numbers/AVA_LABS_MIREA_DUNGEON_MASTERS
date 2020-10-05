@@ -5,15 +5,17 @@ import java.util.Arrays;
 
 public class TestClass {
     Student[] sort () {
-        Student[] arr = {new Student(1),new Student(12),new Student(543),new Student(6),new Student(4)};
-        return mergesort(arr);
+        Student[] arr1 = {new Student(1),new Student(12),new Student(54),new Student(56),new Student(78)};
+        Student[] arr2 = {new Student(0),new Student(14),new Student(4),new Student(564),new Student(8)};
+
+        return mergesort(arr1, arr2);
     }
 
 
-    public static Student[] mergesort(Student[] array1) {
-        Student[] buffer1 = Arrays.copyOf(array1, array1.length);
-        Student[] buffer2 = new Student[array1.length];
-        Student[] result = mergesortInner(buffer1, buffer2, 0, array1.length);
+    public static Student[] mergesort(Student[] array1, Student[] array2) {
+        Student[] buffer1 = array1;
+        Student[] buffer2 = array2;
+        Student[] result = mergesortInner(buffer1, buffer2, 0, buffer1.length);
         return result;
     }
 
