@@ -23,5 +23,9 @@ public class Main <T>{
 
         Array.Filelist("/home/user/IdeaProjects/Labs/src/");
 
+        Integer[] keys = {1,2,3,4};
+        String[] values = {"1","2","3","4"};
+        System.out.println(Solution.<Integer,String>newHashMap(keys,values));
+
     }
 }

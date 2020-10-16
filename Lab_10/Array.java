@@ -23,11 +23,10 @@ class Array <T>{
 
     public T get(int index){
         return this.aL.get(index);
-
     }
+
+
     private ArrayList<T> aL;
-
-
 
     /* Написать метод для конвертации массива строк/чисел в список.
      * */
