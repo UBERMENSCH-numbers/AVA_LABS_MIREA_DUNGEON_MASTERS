@@ -10,7 +10,7 @@ public class RegExps {
     //1.Необходимо реализовать консольное приложение, позволяющее манипулировать строкой, разбив ее на
     // элементы путем использования регулярных выражений.
     ArrayList<String> split(String string, String pattern){
-        ArrayList<String > list = new ArrayList<>();
+        ArrayList<String> list = new ArrayList<>();
         StringTokenizer stringTokenizer = new StringTokenizer(string, pattern);
         while (stringTokenizer.hasMoreTokens()) list.add(stringTokenizer.nextToken());
         return list;
