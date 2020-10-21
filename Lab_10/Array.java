@@ -1,6 +1,5 @@
 package Lab_10;
 
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
 
 import java.io.File;
 import java.io.IOException;
