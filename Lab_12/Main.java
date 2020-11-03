@@ -3,7 +3,7 @@ package Lab_12;
 public class Main {
     public static void main(String[] args) {
         RegExps regExps = new RegExps();
-        System.out.println(regExps.split("dfs sffs  fsdf", " "));
+//        System.out.println(regExps.split("dfs sffs  fsdf", " "));
         System.out.println(regExps.is_abcdefghijklmnopqrstuv18340("abcdefghijklmnopqrstuv18340"));
         System.out.println(regExps.is_abcdefghijklmnopqrstuv18340("a"));
         regExps.getPrice("this line contains 25.12 EU 12.10 RUB, 1.20 USD");

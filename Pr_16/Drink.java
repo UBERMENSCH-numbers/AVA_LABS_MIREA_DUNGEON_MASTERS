@@ -1,6 +1,8 @@
 package Pr_16;
 
 
+import Lab_16.cafe.menu.MenuItem;
+
 public final class Drink implements Item {
 
     private final int cost;
@@ -21,6 +23,7 @@ public final class Drink implements Item {
 
 
     public Drink(int cost, String name, String description) {
+        super();
         if (name.equals("") || name.isEmpty() || description.equals("") || description.isEmpty() || cost < 0)
             throw new IllegalArgumentException();
 

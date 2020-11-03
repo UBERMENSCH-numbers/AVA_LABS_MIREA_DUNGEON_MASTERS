@@ -17,6 +17,15 @@ public final class Dish implements Item {
         this.description = description;
     }
 
+    public Dish(String name, String description) throws IllegalArgumentException {
+        if (name.equals("") || name.isEmpty() || description.equals("") || description.isEmpty())
+            throw new IllegalArgumentException();
+
+        this.cost = 0;
+        this.name = name;
+        this.description = description;
+    }
+
 
     @Override
     public int getCost() {

@@ -11,6 +11,13 @@ public class InternetOrder extends CycledLinkedList<Item> implements Order {
         return (item) -> item.getName() == name;
     }
 
+    InternetOrder(Item[] items) {
+        super(items);
+    }
+
+    public InternetOrder() {
+        super();
+    }
 
     public Item[] select(IItemSelector<Item> selector) {
         MyArrayList result = new MyArrayList<Item>();
@@ -87,5 +94,10 @@ public class InternetOrder extends CycledLinkedList<Item> implements Order {
         Item[] items = toArray();
         ItemsSorter.sort(items);
         return items;
+    }
+
+    @Override
+    public boolean add(Item item) {
+        return super.add(item);
     }
 }
