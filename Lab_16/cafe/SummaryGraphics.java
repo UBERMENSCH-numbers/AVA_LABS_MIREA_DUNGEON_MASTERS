@@ -8,7 +8,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-public class EndWindow extends JFrame {
+public class SummaryGraphics extends JFrame {
 
     private InternetOrder internetOrder;
     private JPanel panel;
@@ -16,7 +16,7 @@ public class EndWindow extends JFrame {
     private JTextArea textArea;
 
 
-    public EndWindow(final InternetOrder internetOrder){
+    public SummaryGraphics(final InternetOrder internetOrder){
         super("Оформить заказ");
         setDefaultCloseOperation( EXIT_ON_CLOSE );
 

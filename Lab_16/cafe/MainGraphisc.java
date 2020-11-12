@@ -14,15 +14,14 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
 
-public class UserWindow extends JFrame {
+public class MainGraphisc extends JFrame {
     private JPanel panel;
     private JMenuBar menuBar;
     private JTextArea textArea;
     private InternetOrder internetOrder;
 
-    public UserWindow(){
+    public MainGraphisc(){
         super("Кабинет пользователя");
          internetOrder = new InternetOrder();
 
@@ -55,7 +54,7 @@ public class UserWindow extends JFrame {
         JMenuItem chiken= new JMenuItem("Курица");
         JMenuItem potatoes= new JMenuItem("Картошка");
         do__.addActionListener(e -> {
-            EndWindow endWindow = new EndWindow(internetOrder);
+            SummaryGraphics endWindow = new SummaryGraphics(internetOrder);
             endWindow.setVisible(true);
             setVisible(false);
 

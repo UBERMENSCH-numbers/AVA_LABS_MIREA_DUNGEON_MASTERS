@@ -28,7 +28,7 @@ class ArrayQueue<T> implements IQueue<T> {
             queue[++rear] = element;  //увеличение Rear и вставка
             nElem++;  // увеличение количества элементов в очереди
         }
-    } // предусловие : maxsize != nElem
+    } // предусловице : maxsize != nElem
     // постусловие : maxsize >= nElem
 
     @Override

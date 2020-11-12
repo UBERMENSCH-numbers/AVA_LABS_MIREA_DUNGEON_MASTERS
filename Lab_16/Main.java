@@ -1,12 +1,12 @@
 package Lab_16;
 
 
-import Lab_16.cafe.UserWindow;
+import Lab_16.cafe.MainGraphisc;
 
 public class Main {
 
     public static void main(String[] args) {
-        UserWindow userWindow = new UserWindow();
+        MainGraphisc userWindow = new MainGraphisc();
         userWindow.setVisible(true);
 
     }
